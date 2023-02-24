@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    h3 Books
+    table
+        thead
+            tr
+                th Book Title
+                th Author
+                th Author 2
+                th Genre
+                th Pages
+                th Image
+                th Description
+                th
+        tbody
+            each book in books
+                tr
+                    td= book.author
+                    td= book.author_extra
+                    td= book.genre
+                    td= book.pages
+                    td= book.image
+                    td= book.description
+                    td= book.title
